@@ -1,0 +1,17 @@
+#ifndef __RUANJIANIIC_H
+#define __RUANJIANIIC_H
+
+#include "main.h"
+#include "gpio.h"
+
+
+void OLED_Init(void);
+void OLED_ShowChar(uint8_t Line,uint8_t Column,char Char);
+void OLED_ShowString(uint8_t Line,uint8_t Column,const char *String);
+void OLED_ShowNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Length);
+void OLED_ShowSignedNum(uint8_t Line, uint8_t Column, int32_t Number, uint8_t Length);
+void OLED_ShowHexNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Length);
+void OLED_ShowBinNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Length);
+void OLED_ShowChinese(uint8_t Line, uint8_t Column, uint8_t HanZinum );
+void OLED_ShowPicture(uint8_t picture);
+#endif
